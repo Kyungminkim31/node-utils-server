@@ -1,0 +1,20 @@
+{
+  "name": "utils-server",
+  "version": "0.0.1",
+  "description": "a server for utils",
+  "main": "uitls.js",
+  "scripts": {
+    "test": "hello, human!"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "node-static": "^0.7.11"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.3"
+  }
+}

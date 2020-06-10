@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Base64</title>
+    </head>
+    <body>
+        <h2>Set your file for being encoded as base64</h2>
+        <input type='file' id='myfile'/>
+        <p>
+            <input type='button' id='encodeBtn' value='encode it'/>
+        </p>
+        <p>
+        <p>
+            <img id='targetImg' >
+        </p>
+        <textarea id='resultPar' style='width:100%;'>
+        </textarea>
+        </p>
+    <script>
+        var encodeBtn = document.getElementById('encodeBtn');
+        encodeBtn.addEventListener('click', ()=>{
+            console.log('click encodeBtn');
+            var files = document.getElementById('myfile').files;
+           var reader = new FileReader();
+            reader.readAsDataURL(files[0]);
+            reader.onload = function(){
+                console.log(reader.result);
+                document.getElementById('resultPar').innerHTML = reader.result;
+                document.getElementById('targetImg').src = reader.result;
+            }
+            reader.onerror = function(e){
+                console.log('Error: ', e);
+            }
+        });
+    </script>
+    </body>
+</html>
+
