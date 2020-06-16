@@ -16,7 +16,7 @@ app.use(express.static('public'));
 app.set('port', process.env.PORT || 8885);
 
 app.get('/', function(req, res){
-    res.send('Received a GET HTTP mehtod');
+    console.log('get - root');
 });
 
 app.post('/base64/', function(req, res){
