@@ -4,17 +4,23 @@
   "description": "a server for utils",
   "main": "uitls.js",
   "scripts": {
-    "test": "hello, human!"
+    "preinstall": "npx npm-force-resolutions"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "eslint": "^7.2.0",
     "express": "^4.17.1",
-    "node-static": "^0.7.11"
+    "node-static": "^0.7.11",
+    "prettier": "^2.0.5"
   },
   "devDependencies": {
     "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-prettier": "^3.1.4"
+    "eslint-plugin-prettier": "^3.1.4",
+    "minimist": "^1.2.5"
+  },
+  "resolution": {
+    "minimist": "^1.2.5"
   }
 }
