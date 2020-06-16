@@ -2,7 +2,6 @@
 
 var express = require('express');
 var http = require('http');
-var nodeStatic = require('node-static');
 var path = require('path');
 var os = require('os');
 
@@ -10,8 +9,11 @@ var app = express();
 
 var cors = require('cors');
 
+// 정적페이지 불러오기를 위한 설정
+app.use('/', express.static(path.join(__dirname,'public')));
+
+// CORS 설정을 위한 설정
 app.use(cors());
-app.use(express.static('public'));
 
 app.set('port', process.env.PORT || 8885);
 

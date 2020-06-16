@@ -1,26 +1,23 @@
 {
   "name": "utils-server",
-  "version": "0.0.1",
-  "description": "a server for utils",
-  "main": "uitls.js",
+  "version": "1.0.0",
+  "description": "http://localhost:8885/base64/",
+  "main": "utils.js",
   "scripts": {
-    "preinstall": "npx npm-force-resolutions"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kyungminkim31/node-utils-server.git"
   },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kyungminkim31/node-utils-server/issues"
+  },
+  "homepage": "https://github.com/Kyungminkim31/node-utils-server#readme",
   "dependencies": {
     "cors": "^2.8.5",
-    "eslint": "^7.2.0",
-    "express": "^4.17.1",
-    "node-static": "^0.7.11",
-    "prettier": "^2.0.5"
-  },
-  "devDependencies": {
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "minimist": "^1.2.5"
-  },
-  "resolution": {
-    "minimist": "^1.2.5"
+    "express": "^4.17.1"
   }
 }
